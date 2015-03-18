@@ -133,7 +133,7 @@ func (this *TcpChannel) listen(bufferSize int) (err error) {
         		return err
             }
             
-            time.Sleep(time.Millisecond * 10)
+            time.Sleep(time.Millisecond * 1)
         }
 
         // Reading offset, as there might be several packets inside
